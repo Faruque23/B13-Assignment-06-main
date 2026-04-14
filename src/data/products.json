@@ -103,5 +103,19 @@
     "icon": "📷",
     "period": "/month",
     "features": ["100K photos", "High resolution", "Unlimited downloads"]
+  },
+  {
+    "id": 9,
+    "name": "Social Media Manager Pro",
+    "category": "Marketing",
+    "price": 59.99,
+    "originalPrice": 99.99,
+    "description": "Comprehensive toolkit for managing all your social media accounts and campaigns",
+    "image": "/products/social-media.png",
+    "tag": "Popular",
+    "tagType": "popular",
+    "icon": "📱",
+    "period": "/month",
+    "features": ["Multi-account management", "Scheduling", "Analytics dashboard"]
   }
 ]

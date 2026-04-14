@@ -152,13 +152,83 @@ function App() {
         </div>
       </section>
 
+      {/* Products & Cart Toggle Section */}
+      <section className="products-cart-section" id="products" aria-label="Products and shopping cart section">
+        
+        <div className="section-header">
+          <h2>Our Products</h2>
+          <p>Choose from our premium digital tools to boost your productivity</p>
+        </div>
+
+        {/* Toggle Buttons */}
+        <div className="toggle-buttons" role="tablist" aria-label="View options">
+          <button
+            className={`toggle-btn ${activeTab === 'products' ? 'active' : ''}`}
+            onClick={() => setActiveTab('products')}
+            role="tab"
+            aria-selected={activeTab === 'products'}
+            aria-controls="products-panel"
+          >
+            Products
+          </button>
+          <button
+            className={`toggle-btn ${activeTab === 'cart' ? 'active' : ''}`}
+            onClick={() => setActiveTab('cart')}
+            role="tab"
+            aria-selected={activeTab === 'cart'}
+            aria-controls="cart-panel"
+          >
+            Cart ({cartItemCount})
+          </button>
+        </div>
+
+ {/* Cart Section */}
+        {activeTab === 'cart' && (
+          <div className="cart-section" id="cart-panel" role="tabpanel" aria-labelledby="cart-tab">
+            {cart.length === 0 ? (
+              <div className="empty-cart" role="alert">
+                <p>Your cart is empty</p>
+                <p className="empty-text">Start adding products to your cart!</p>
+              </div>
+            ) : (
+              <>
+                <div className="cart-items" role="list" aria-label="Shopping cart items">
+                  {cart.map((item, index) => (
+                    <CartItem
+                      key={index}
+                      item={item}
+                      onRemove={handleRemoveFromCart}
+                    />
+                  ))}
+                </div>
+                <div className="cart-summary" role="region" aria-label="Order summary">
+                  <div className="summary-row">
+                    <span>Total Items:</span>
+                    <span aria-live="polite">{cartItemCount}</span>
+                  </div>
+                  <div className="summary-row total">
+                    <span>Total Price:</span>
+                    <span aria-live="polite">${cartTotal.toFixed(2)}</span>
+                  </div>
+                  <button
+                    className="btn-primary checkout-btn"
+                    onClick={handleProceedToCheckout}
+                  >
+                    Proceed to Checkout
+                  </button>
+                </div>
+              </>
+            )}
+          </div>
+        )}
+      </section>
 
 
 
 
 
-    </>
-  )
+      </>
+      )
 }
 
-export default App
+      export default App

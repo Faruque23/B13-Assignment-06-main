@@ -8,7 +8,10 @@
     "description": "Advanced AI-powered writing assistant for blogs, emails, and social media",
     "image": "/products/ai-writer.png",
     "tag": "Bestseller",
-    "tagType": "bestseller"
+    "tagType": "bestseller",
+    "icon": "✍️",
+    "period": "/month",
+    "features": ["Blog writing", "Email generation", "Social media content"]
   },
   {
     "id": 2,
@@ -19,7 +22,10 @@
     "description": "200+ professionally designed templates for Figma and Adobe XD",
     "image": "/products/design-templates.png",
     "tag": "Popular",
-    "tagType": "popular"
+    "tagType": "popular",
+    "icon": "🎨",
+    "period": "/month",
+    "features": ["200+ templates", "Figma ready", "Customizable"]
   },
   {
     "id": 3,
@@ -29,7 +35,10 @@
     "description": "Professional video editing software with AI-powered features",
     "image": "/products/video-editor.png",
     "tag": "New",
-    "tagType": "new"
+    "tagType": "new",
+    "icon": "🎬",
+    "period": "/month",
+    "features": ["4K editing", "AI effects", "Cloud storage"]
   },
   {
     "id": 4,
@@ -40,7 +49,10 @@
     "description": "All-in-one dashboard to manage tasks, projects, and teams",
     "image": "/products/dashboard.png",
     "tag": "Sale",
-    "tagType": "sale"
+    "tagType": "sale",
+    "icon": "📊",
+    "period": "/month",
+    "features": ["Task management", "Team collab", "Analytics"]
   },
   {
     "id": 5,
@@ -48,7 +60,10 @@
     "category": "Design",
     "price": 19.99,
     "description": "5000+ customizable icons for web and mobile interfaces",
-    "image": "/products/icons.png"
+    "image": "/products/icons.png",
+    "icon": "🎯",
+    "period": "/month",
+    "features": ["5000+ icons", "SVG format", "Customizable"]
   },
   {
     "id": 6,
@@ -59,7 +74,10 @@
     "description": "50 professional Lightroom and Photoshop presets",
     "image": "/products/presets.png",
     "tag": "Trending",
-    "tagType": "trending"
+    "tagType": "trending",
+    "icon": "📸",
+    "period": "/month",
+    "features": ["50 presets", "Lightroom ready", "Photoshop pro"]
   },
   {
     "id": 7,
@@ -69,7 +87,10 @@
     "description": "AI assistant for code generation and programming help",
     "image": "/products/code-ai.png",
     "tag": "New",
-    "tagType": "new"
+    "tagType": "new",
+    "icon": "💻",
+    "period": "/month",
+    "features": ["AI coding", "Snippets", "Debugging help"]
   },
   {
     "id": 8,
@@ -78,6 +99,9 @@
     "price": 44.99,
     "originalPrice": 89.99,
     "description": "Access to 100,000+ high-quality stock photos",
-    "image": "/products/stock-photos.png"
+    "image": "/products/stock-photos.png",
+    "icon": "📷",
+    "period": "/month",
+    "features": ["100K photos", "High resolution", "Unlimited downloads"]
   }
 ]

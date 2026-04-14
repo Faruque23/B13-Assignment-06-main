@@ -8,13 +8,13 @@
 export default function CartItem({ item, onRemove }) {
   return (
     <div className="cart-item" role="listitem">
-      <div className="cart-item-info">
-        <h4 className="cart-item-name">{item.name}</h4>
-        <p className="cart-item-category">{item.category}</p>
-      </div>
-
-      <div className="cart-item-price">
-        <span className="price">${item.price.toFixed(2)}</span>
+      <div className="cart-item-content">
+        <div className="cart-item-icon">📦</div>
+        <div className="cart-item-info">
+          <h4 className="cart-item-name">{item.name}</h4>
+          <p className="cart-item-category">{item.category}</p>
+          <p className="cart-item-price">${item.price.toFixed(2)}</p>
+        </div>
       </div>
 
       <button

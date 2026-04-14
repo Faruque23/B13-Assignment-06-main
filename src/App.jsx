@@ -129,8 +129,9 @@ function App() {
 
         </div>
         <div className="hero-image">
-          <img src="../src/assets/banner.png" alt="Hero Image" />
-
+          <div className="hero-img-placeholder">
+            <img src="./src/assets/banner.png" alt="Hero Image" />
+          </div>
         </div>
       </section>
 
@@ -155,12 +156,6 @@ function App() {
       {/* Products & Cart Toggle Section */}
       <section className="products-cart-section" id="products" aria-label="Products and shopping cart section">
 
-        <div className="section-header">
-          <h2>Our Products</h2>
-          <p>Choose from our premium digital tools to boost your productivity</p>
-        </div>
-
-        {/* Toggle Buttons */}
         <div className="toggle-buttons" role="tablist" aria-label="View options">
           <button
             className={`toggle-btn ${activeTab === 'products' ? 'active' : ''}`}
@@ -181,6 +176,40 @@ function App() {
             Cart ({cartItemCount})
           </button>
         </div>
+
+        {/* Products Section */}
+        {activeTab === 'products' && (
+          <div id="products-panel" role="tabpanel" aria-labelledby="products-tab">
+            <div className="section-header">
+              <h2>Premium Digital Tools</h2>
+              <p>Choose from our curated collection of premium digital products to accelerate your productivity</p>
+            </div>
+            <div className="products-container">
+              {productsData.map(product => (
+                <div key={product.id} className="tool-card">
+                  {product.tagType && (
+                    <span className={`tool-badge ${product.tagType}`}>
+                      {product.tag}
+                    </span>
+                  )}
+                  <div className="tool-icon">{product.icon}</div>
+                  <h3>{product.name}</h3>
+                  <p>{product.description}</p>
+                  <div className="tool-price">
+                    <span className="price">${product.price}</span>
+                    <span className="price-period">{product.period}</span>
+                  </div>
+                  <ul className="tool-features">
+                    {product.features.map((feature, idx) => (
+                      <li key={idx}><span className="check">✓</span>{feature}</li>
+                    ))}
+                  </ul>
+                  <button className="btn-primary buy-btn" onClick={() => handleAddToCart(product)}>Buy Now</button>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
 
         {/* Cart Section */}
         {activeTab === 'cart' && (

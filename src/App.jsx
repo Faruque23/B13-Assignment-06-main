@@ -223,6 +223,38 @@ function App() {
         )}
       </section>
 
+ {/* Premium Tools Showcase Section */}
+      <section id="features" className="tools-section">
+        <div className="section-header">
+          <h2>Featured Tools</h2>
+          <p>Handpicked tools from our collection that deliver exceptional value</p>
+        </div>
+        <div className="tools-grid">
+          {productsData.slice(0, 6).map(product => (
+            <div key={product.id} className="tool-card">
+              {product.tagType && (
+                <span className={`tool-badge ${product.tagType}`}>
+                  {product.tag}
+                </span>
+              )}
+              <div className="tool-icon">{product.icon}</div>
+              <h3>{product.name}</h3>
+              <p>{product.description}</p>
+              <div className="tool-price">
+                <span className="price">${product.price}</span>
+                <span className="price-period">{product.period}</span>
+              </div>
+              <ul className="tool-features">
+                {product.features.map((feature, idx) => (
+                  <li key={idx}><span className="check">✓</span>{feature}</li>
+                ))}
+              </ul>
+              <button className="btn-primary buy-btn" onClick={() => handleAddToCart(product)}>Buy Now</button>
+            </div>
+          ))}
+        </div>
+      </section>
+
 
 
 

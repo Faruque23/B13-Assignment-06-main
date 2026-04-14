@@ -154,7 +154,7 @@ function App() {
 
       {/* Products & Cart Toggle Section */}
       <section className="products-cart-section" id="products" aria-label="Products and shopping cart section">
-        
+
         <div className="section-header">
           <h2>Our Products</h2>
           <p>Choose from our premium digital tools to boost your productivity</p>
@@ -182,7 +182,7 @@ function App() {
           </button>
         </div>
 
- {/* Cart Section */}
+        {/* Cart Section */}
         {activeTab === 'cart' && (
           <div className="cart-section" id="cart-panel" role="tabpanel" aria-labelledby="cart-tab">
             {cart.length === 0 ? (
@@ -223,7 +223,7 @@ function App() {
         )}
       </section>
 
- {/* Premium Tools Showcase Section */}
+      {/* Premium Tools Showcase Section */}
       <section id="features" className="tools-section">
         <div className="section-header">
           <h2>Featured Tools</h2>
@@ -255,12 +255,40 @@ function App() {
         </div>
       </section>
 
+      {/* Steps Section */}
+      <section className="steps-section">
+        <div className="section-header">
+          <h2>Get Started in 3 Steps</h2>
+          <p>Start using premium digital tools in minutes, not hours</p>
+        </div>
+        <div className="steps-container">
+          <div className="step">
+            <div className="step-number">01</div>
+            <div className="step-icon">👤</div>
+            <h3>Create Account</h3>
+            <p>Sign up for free in seconds. No credit card required to get started.</p>
+          </div>
+          <div className="step">
+            <div className="step-number">02</div>
+            <div className="step-icon">📦</div>
+            <h3>Choose Products</h3>
+            <p>Browse our catalog and select the tools that fit your needs.</p>
+          </div>
+          <div className="step">
+            <div className="step-number">03</div>
+            <div className="step-icon">🚀</div>
+            <h3>Start Creating</h3>
+            <p>Download and start using your premium tools immediately.</p>
+          </div>
+        </div>
+      </section>
 
 
 
 
-      </>
-      )
+
+    </>
+  )
 }
 
-      export default App
+export default App

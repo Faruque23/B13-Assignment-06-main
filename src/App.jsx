@@ -84,7 +84,7 @@ function App() {
   return (
     <>
       <ToastContainer />
-      
+
       {/* Header */}
       <header className="header" role="banner">
         <div className="header-content">
@@ -97,7 +97,7 @@ function App() {
             <a href="#faq" aria-label="Navigate to FAQ section">FAQ</a>
           </nav>
           <div>
-            <button 
+            <button
               className="btn-secondary border-none cart-btn"
               aria-label={`Shopping cart with ${cartItemCount} items`}
               onClick={() => setActiveTab('cart')}
@@ -134,11 +134,28 @@ function App() {
         </div>
       </section>
 
+      {/* Stats Section */}
+      <section className="stats-section">
+        <div className="stats-container">
+          <div className="stat-item">
+            <h3>50K+</h3>
+            <p>Active Users</p>
+          </div>
+          <div className="stat-item">
+            <h3>200+</h3>
+            <p>Integrations</p>
+          </div>
+          <div className="stat-item">
+            <h3>4.9</h3>
+            <p>Rating</p>
+          </div>
+        </div>
+      </section>
 
 
 
 
-      
+
 
     </>
   )

@@ -1,0 +1,83 @@
+[
+  {
+    "id": 1,
+    "name": "AI Content Writer Pro",
+    "category": "AI Tools",
+    "price": 49.99,
+    "originalPrice": 79.99,
+    "description": "Advanced AI-powered writing assistant for blogs, emails, and social media",
+    "image": "/products/ai-writer.png",
+    "tag": "Bestseller",
+    "tagType": "bestseller"
+  },
+  {
+    "id": 2,
+    "name": "Design Templates Bundle",
+    "category": "Design",
+    "price": 34.99,
+    "originalPrice": 59.99,
+    "description": "200+ professionally designed templates for Figma and Adobe XD",
+    "image": "/products/design-templates.png",
+    "tag": "Popular",
+    "tagType": "popular"
+  },
+  {
+    "id": 3,
+    "name": "Video Editing Suite",
+    "category": "Video",
+    "price": 99.99,
+    "description": "Professional video editing software with AI-powered features",
+    "image": "/products/video-editor.png",
+    "tag": "New",
+    "tagType": "new"
+  },
+  {
+    "id": 4,
+    "name": "Productivity Dashboard",
+    "category": "Software",
+    "price": 29.99,
+    "originalPrice": 49.99,
+    "description": "All-in-one dashboard to manage tasks, projects, and teams",
+    "image": "/products/dashboard.png",
+    "tag": "Sale",
+    "tagType": "sale"
+  },
+  {
+    "id": 5,
+    "name": "Icon Pack Pro",
+    "category": "Design",
+    "price": 19.99,
+    "description": "5000+ customizable icons for web and mobile interfaces",
+    "image": "/products/icons.png"
+  },
+  {
+    "id": 6,
+    "name": "Photography Presets",
+    "category": "Photography",
+    "price": 24.99,
+    "originalPrice": 39.99,
+    "description": "50 professional Lightroom and Photoshop presets",
+    "image": "/products/presets.png",
+    "tag": "Trending",
+    "tagType": "trending"
+  },
+  {
+    "id": 7,
+    "name": "Code Generation AI",
+    "category": "Development",
+    "price": 79.99,
+    "description": "AI assistant for code generation and programming help",
+    "image": "/products/code-ai.png",
+    "tag": "New",
+    "tagType": "new"
+  },
+  {
+    "id": 8,
+    "name": "Stock Photo Collection",
+    "category": "Photography",
+    "price": 44.99,
+    "originalPrice": 89.99,
+    "description": "Access to 100,000+ high-quality stock photos",
+    "image": "/products/stock-photos.png"
+  }
+]
